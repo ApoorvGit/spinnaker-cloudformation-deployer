@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.apoorv.spinnaker'
+version = '0.1.0'
+
+sourceCompatibility = '11'
+targetCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'io.spinnaker.orca:orca-api:8.64.0'
+    implementation 'org.springframework:spring-context:5.3.32'
+    implementation 'com.amazonaws:aws-java-sdk-cloudformation:1.12.772'
+    implementation 'org.pf4j:pf4j:3.10.1'
+    testImplementation 'junit:junit:4.13.2'
+}
